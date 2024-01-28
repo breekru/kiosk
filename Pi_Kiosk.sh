@@ -3,8 +3,8 @@ sudo apt-get purge wolfram-engine -y
 sudo apt-get purge libreoffice* -y
 sudo apt-get purge bluej* -y
 sudo apt-get purge greenfoot* -y
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt-get clean -y
+sudo apt-get autoremove -y
 
 #Update OS
 sudo apt-get update && sudo apt-get upgrade -y
