@@ -32,14 +32,15 @@ xte "str @xset -dpms" -x:0
 xte "key Return" -x:0
 xte "str @xset s noblank" -x:0
 xte "key Return" -x:0
-xte "str @/home/pi/kiosk/trello-kiosk.sh /b/RZBwe6aa/blk-farm-projects trello@blkfarms.com kcIF0&3*@c > /dev/nul> 2>&1" -x:0
+xte "str @/home/pi/kiosk/trello_kiosk.sh /b/RZBwe6aa/blk-farm-projects trello@blkfarms.com kcIF0&3*@c > /dev/nul> 2>&1" -x:0
 xte "keydown Control_L" "key X" "keyup Control_L" -x:0
 xte "str Y" -x:0
+xte "key Return" -x:0
 
 #Clone Trello-Kiosk GitHub
 #xte "str git clone https://github.com/Zuehlke/Trello-Kiosk.git" -x:0
 sleep 15s;
-xte "str sudo chmod 755 /home/pi/kiosk/trello-kiosk.sh" -x:0
+xte "str sudo chmod 755 /home/pi/kiosk/trello_kiosk.sh" -x:0
 xte "key Return" -x:0
 sleep 5s;
 xte "str sudo chmod 755 /home/pi/kiosk/tab_switcher.sh" -x:0
