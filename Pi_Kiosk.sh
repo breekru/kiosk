@@ -48,6 +48,7 @@ xte "key Return" -x:0
 xte "str sudo update-alternatives --config x-www-browser" -x:0
 sleep 1s;
 xte "key 2" -x:0
+xte "key return" -x:0
 sudo reboot
 
 
