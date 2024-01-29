@@ -45,6 +45,9 @@ xte "key Return" -x:0
 sleep 5s;
 xte "str sudo chmod 755 /home/pi/kiosk/tab_switcher.sh" -x:0
 xte "key Return" -x:0
+sleep 5s;
+xte "str sudo chmod 755 /home/pi/kiosk/set_cron.sh" -x:0
+xte "key Return" -x:0
 xte "str sudo update-alternatives --config x-www-browser" -x:0
 sleep 1s;
 xte "key 2" -x:0
